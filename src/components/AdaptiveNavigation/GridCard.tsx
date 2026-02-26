@@ -11,7 +11,8 @@ interface GridCardProps {
   isIntro?: boolean;
   currentSection?: string;
   currentLocale?: string;
-  onLocaleChange?: (locale: string) => void;
+//  onLocaleChange?: (locale: string) => void;
+  onLocaleChange?: (locale: "sv" | "en" | "es") => void;
   showLanguageSwitcher?: boolean;
   navAnimationComplete?: boolean;
   isMobile?: boolean; // NEW: Pass mobile state from parent
