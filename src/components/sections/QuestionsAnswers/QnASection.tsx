@@ -187,7 +187,7 @@ const QnASection: React.FC = () => {
         <SummaryCard
           exploredPaths={Array.from(viewedPaths)}
           t={t}
-          language={language}
+          language={locale}
           onClose={handleCloseSummary}
         />
       )}
@@ -196,3 +196,4 @@ const QnASection: React.FC = () => {
 };
 
 export default QnASection;
+//          language={language}

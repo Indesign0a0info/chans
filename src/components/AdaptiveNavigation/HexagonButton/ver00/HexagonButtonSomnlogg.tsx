@@ -62,13 +62,14 @@ export const HexagonButtonSomnlogg: React.FC<HexagonButtonSomnloggProps> = ({
         opacity: opacity,
         transition: 'opacity 0.5s ease-in-out',
         visibility: opacity > 0 ? 'visible' : 'hidden',
-        pointerEvents: opacity > 0 ? 'auto' : 'none',
+        pointerEvents: 'none',
         top: 0,
         left: 0,
         width: '100%',
         height: '100%',
       }}
     >
+        {/*pointerEvents: opacity > 0 ? 'auto' : 'none',*/}
         {/*pointerEvents: 'none',*/}
 
         
