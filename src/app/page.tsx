@@ -8,6 +8,7 @@ import QnASection from '@/components/sections/QuestionsAnswers/QnASection';
 import  EducationSection from '@/components/education';
 import HeroSection from '@/components/HeroSection/HeroSection'
 import SomnloggPresentation from '@/components/case/SomnloggPresentation'
+import SectionLabel from '@/components/case/SectionLabel'
 import AdaptiveNavigation from '../components/AdaptiveNavigation';
 import StockholmClock from '@/components/StockholmClock'
 
@@ -25,20 +26,24 @@ const App: React.FC = () => {
       <LanguageProvider>
         <Layout>
           <AdaptiveNavigation somnloggTheme={somnloggTheme} />
+          {/*<div className="z-0 hittamig" >*/}
+          {/*  <AdaptiveNavigation somnloggTheme={somnloggTheme} />*/}
+          {/*</div>*/}
           <StockholmClock language="sv" />
-          <section id="hero">
+          <section id="hero" className={'bg-slate-950'}>
             <HeroSection/>
           </section>
-          <section id="skills">
+          <section id="skills" className={'bg-slate-950'}>
             <SkillsSection />
           </section>
-          <section id="somnlogg" className="somnlogg-section">
+          <section id="somnlogg" className="somnlogg-section bg-slate-950 relative">
+            <SectionLabel sectionId="somnlogg" />
             <SomnloggPresentation onThemeChange={handleSomnloggThemeChange} />
           </section>
-          <section id="education">
+          <section id="education" className={'bg-slate-950'}>
             <EducationSection/>
           </section>
-          <section id="qna">
+          <section id="qna" className={'bg-slate-950'}>
             <QnASection/>
           </section>
           {/*Footer*/}
