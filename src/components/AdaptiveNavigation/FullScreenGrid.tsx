@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react';
 import GridCard from './GridCard';
 import type { Section } from './config';
 
+  //onLocaleChange: React.Dispatch<React.SetStateAction<"sv" | "en" | "es">>;
 interface FullScreenGridProps {
   sections: Section[];
   onInteract: (sectionId: string) => void;
@@ -12,7 +13,7 @@ interface FullScreenGridProps {
   isFading: boolean;
   currentSection: string;
   currentLocale: string;
-  onLocaleChange: React.Dispatch<React.SetStateAction<"sv" | "en" | "es">>;
+  onLocaleChange: (locale: "sv" | "en" | "es") => void;
   t: (key: string) => string;
 }
 //  onLocaleChange: (locale: string) => void;
