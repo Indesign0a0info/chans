@@ -67,6 +67,10 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   typescript: { ignoreBuildErrors: true },
   reactStrictMode: true,
+  turbopack: {
+    // Manually set the root to the current directory
+    root: path.join(__dirname),
+  },
 }
 
 export default nextConfig
