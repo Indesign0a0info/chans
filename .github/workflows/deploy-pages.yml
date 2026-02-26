@@ -35,6 +35,9 @@ jobs:
       - name: Build & Export
         run: yarn build
         # next build med output: 'export' genererar /out-mappen
+        env:
+          NEXT_TELEMETRY_DISABLED: 1
+          TURBOPACK: 0
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
