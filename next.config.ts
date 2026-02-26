@@ -33,15 +33,6 @@ import type { NextConfig } from 'next'
 
 
 
-
-
-
-
-
-
-
-
-
 const nextConfig: NextConfig = {
   output: 'export',           // Aktiverar statisk export
   basePath: '/chans',     // Byt ut REPO_NAMN mot GitHub-reponamn
