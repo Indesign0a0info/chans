@@ -45,6 +45,9 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,  // ← tillfälligt
   },
   reactStrictMode: true,
+  turbopack: {
+    root: '.',  // ← lägg till denna
+  },
 }
 
 export default nextConfig
