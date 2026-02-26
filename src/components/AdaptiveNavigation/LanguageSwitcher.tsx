@@ -1,19 +1,28 @@
 'use client';
 
+import React from "react";
+
 interface LanguageSwitcherProps {
   currentLocale: string;
-  onLocaleChange: (locale: string) => void;
+//  onLocaleChange: (locale: string) => void;
+  onLocaleChange: (locale: "sv" | "en" | "es") => void;
 }
 
 export default function LanguageSwitcher({ 
   currentLocale, 
   onLocaleChange 
 }: LanguageSwitcherProps) {
+//  const languages = [
+//    { code: 'sv', label: 'SV' },
+//    { code: 'en', label: 'EN' },
+//    { code: 'es', label: 'ES' }
+//  ];
+
   const languages = [
     { code: 'sv', label: 'SV' },
     { code: 'en', label: 'EN' },
     { code: 'es', label: 'ES' }
-  ];
+  ] as const;
 
   return (
     <div 
