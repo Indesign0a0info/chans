@@ -37,7 +37,7 @@ jobs:
         # next build med output: 'export' genererar /out-mappen
         env:
           NEXT_TELEMETRY_DISABLED: 1
-          TURBOPACK: 0
+          NODE_PATH: ${{ github.workspace }}/node_modules
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
