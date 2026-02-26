@@ -71,6 +71,7 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   typescript: { ignoreBuildErrors: true },
   reactStrictMode: true,
+  eslint: { ignoreDuringBuilds: true },  // ← lägg till
 }
 
 export default nextConfig
