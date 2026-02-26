@@ -67,9 +67,6 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   typescript: { ignoreBuildErrors: true },
   reactStrictMode: true,
-  turbopack: {
-    root: path.resolve(__dirname),
-  },
 }
 
 export default nextConfig
