@@ -92,7 +92,8 @@ export default function GridCard({
           {/* Language switcher labels (top-left) */}
           <div className="absolute top-4 left-4 z-20">
             <div className="flex items-center gap-1 text-xs font-medium">
-              {['sv', 'en', 'es'].map((lang, idx) => (
+              {/*{['sv', 'en', 'es'].map((lang, idx) => (*/}
+              {(['sv', 'en', 'es'] as const).map((lang, idx) => (
                 <React.Fragment key={lang}>
                   <span
                     onClick={(e) => {

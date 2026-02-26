@@ -10,6 +10,8 @@ type PositionMode = 'hero-center' | 'sticky-left';
 
 interface UseHexagonButtonStateProps {
   currentSection: string;
+  isHeroSection: boolean;
+  sectionVisibilities: Record<string, any>;
   isMobile: boolean;
   showGrid: boolean;
   heroVisibility?: number; // NEW: optional, from parent AdaptiveNavigation
@@ -47,6 +49,7 @@ const CONFIG = {
 
 export const useHexagonButtonState = ({
   currentSection,
+  isHeroSection,
   isMobile,
   showGrid,
   heroVisibility: heroVisibilityProp, // NEW: optional prop from parent

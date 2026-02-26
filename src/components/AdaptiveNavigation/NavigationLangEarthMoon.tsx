@@ -13,6 +13,7 @@ type GlobeSize = 'small' | 'medium' | 'large';
 
 interface NavigationLangEarthMoonProps {
   isVisible: boolean;
+  isMobile?: boolean;
   locale: string;
   size: GlobeSize;
   showLabel: boolean;

@@ -65,7 +65,6 @@ export const HexagonButtonSticky: React.FC<HexagonButtonStickyProps> = ({
         opacity: opacity,
         transition: 'opacity 0.5s ease-in-out',
         visibility: opacity > 0 ? 'visible' : 'hidden',
-        pointerEvents: opacity > 0 ? 'auto' : 'none',
         top: 0,
         left: 0,
         width: '100%',
@@ -73,6 +72,8 @@ export const HexagonButtonSticky: React.FC<HexagonButtonStickyProps> = ({
         pointerEvents: 'none',
       }}
     >
+        {/*pointerEvents: opacity > 0 ? 'auto' : 'none',*/}
+        
       {/* hb1 - Main flex container, stacks groups vertically */}
       {hb1Visible && (
         <div
