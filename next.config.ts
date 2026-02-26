@@ -1,8 +1,14 @@
-// next.config.ts
+// next.config.ts  ← BARA i gh-pages-export-grenen
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  // Inga basePath eller output-inställningar här
+  output: 'export',           // Aktiverar statisk export
+  basePath: '/Indesign0a0info/chans',     // Byt ut REPO_NAMN mot GitHub-reponamn
+  assetPrefix: '/Indesign0a0info/chans/', // Samma som basePath
+  trailingSlash: true,        // Rekommenderat för GitHub Pages
+  images: {
+    unoptimized: true,        // Krävs för statisk export
+  },
   reactStrictMode: true,
 }
 
